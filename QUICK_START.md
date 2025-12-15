@@ -57,16 +57,19 @@ print("Injection:", injection[0]['generated_text'])
 ## What's Next?
 
 ### For Beginners
+
 1. Complete Module 1: Introduction & Foundations
 2. Work through all labs sequentially
 3. Join the community forums
 
 ### For Experienced Researchers
+
 1. Review Module 1 quickly
 2. Jump to Module 3: Model Evasion
 3. Focus on advanced techniques
 
 ### For Specific Topics
+
 - **Prompt Injection**: Start with Module 2
 - **Model Attacks**: Start with Module 3
 - **Privacy**: Start with Module 4
@@ -123,11 +126,13 @@ for prompt in test_prompts:
 ## Need Help?
 
 ### Documentation
+
 - **[README.md](README.md)** - Complete overview
 - **[INSTRUCTOR_GUIDE.md](INSTRUCTOR_GUIDE.md)** - Teaching guide
 - **Module READMEs** - Detailed module information
 
 ### Community
+
 - GitHub Issues for bug reports
 - Discussions for questions
 - Pull requests for contributions
@@ -135,12 +140,14 @@ for prompt in test_prompts:
 ### Troubleshooting
 
 **Common Issues:**
+
 - **Import errors**: Run `pip install -r requirements.txt`
 - **GPU not detected**: Check CUDA/MPS installation
 - **Notebook won't start**: Try `jupyter lab --no-browser`
 - **Permission errors**: Check virtual environment activation
 
 **Still stuck?** Open an issue with:
+
 - Your Python version
 - Operating system
 - Error message

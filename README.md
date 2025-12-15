@@ -20,6 +20,7 @@ This training teaches **offensive security techniques** for AI systems, the same
 ## 🎯 Target Audience
 
 Security researchers with:
+
 - Intermediate to advanced technical background
 - Understanding of machine learning fundamentals
 - Interest in AI/ML security and adversarial techniques
@@ -29,48 +30,56 @@ Security researchers with:
 The training is organized into sequential modules, each building upon previous concepts:
 
 ### Module 1: Introduction & Foundations
+
 - Overview of AI/ML security landscape
 - Understanding LLM architecture and vulnerabilities
 - Setting up your red teaming environment
 - Introduction to adversarial thinking
 
 ### Module 2: Prompt Injection & Jailbreaking
+
 - Understanding prompt injection attacks
 - Jailbreaking techniques and methodologies
 - Defense mechanisms and their limitations
 - Hands-on labs with real-world scenarios
 
 ### Module 3: Model Evasion Attacks
+
 - White-box evasion techniques
 - Black-box evasion strategies
 - Adversarial example generation
 - Practical exercises with various models
 
 ### Module 4: Data Extraction & Privacy
+
 - Training data inference attacks
 - Model inversion techniques
 - Membership inference attacks
 - Privacy-preserving defenses
 
 ### Module 5: Model Poisoning
+
 - Training data poisoning
 - Backdoor attacks
 - Supply chain vulnerabilities
 - Detection and mitigation strategies
 
 ### Module 6: Advanced LLM Attacks
+
 - Model weight extraction
 - Model distillation attacks
 - Self-instruct data generation
 - Serialization vulnerabilities
 
 ### Module 7: Assessment & Testing
+
 - Comprehensive security assessment methodologies
 - Automated testing frameworks
 - Red team exercise scenarios
 - Reporting and remediation
 
 ### Module 8: Final Assessment
+
 - Capstone project
 - Real-world scenario testing
 - Comprehensive evaluation
@@ -86,19 +95,13 @@ The training is organized into sequential modules, each building upon previous c
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+gh repo clone TheCoreMan/genai-security-training
 cd genai-security-training
 
 # Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# Verify installation (Optional and note all packages)
-python -c "import torch, transformers, numpy, pandas; print('✅ Ready!')"
+uv venv
+uv sync --all-extras
+source .venv/bin/activate
 ```
 
 **Note**: Installation takes 10-15 minutes. Labs that need additional packages (like `textattack`, `adversarial-robustness-toolbox`, etc.) will automatically install them when you run the notebook.
@@ -114,6 +117,7 @@ python -c "import torch, transformers, numpy, pandas; print('✅ Ready!')"
 ## 📖 Learning Path
 
 Each module contains:
+
 - **Theory**: Markdown documents explaining concepts
 - **Labs**: Jupyter notebooks with hands-on exercises
 - **References**: Links to papers, tools, and additional resources
@@ -124,16 +128,19 @@ Each module contains:
 This course uses industry-standard security testing tools:
 
 ### Adversarial Testing Frameworks
+
 - **[Adversarial Robustness Toolbox (ART)](https://adversarial-robustness-toolbox.readthedocs.io/)** - IBM's comprehensive library for adversarial ML (Module 7)
 - **[TextAttack](https://textattack.readthedocs.io/)** - NLP-focused adversarial attack framework (Modules 3, 7)
 - **[SHAP](https://shap.readthedocs.io/)** - Model explainability and robustness testing (Module 7)
 
 ### Standards & Guidelines
+
 - **[OWASP LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)** - Top vulnerabilities in LLM applications
 - **[NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)** - AI risk assessment guidelines
 - **[MITRE ATLAS](https://atlas.mitre.org/)** - Adversarial threat landscape for AI systems
 
 ### Companion Resources
+
 - **[GenAI Essentials](https://github.com/schwartz1375/genai-essentials)** - Foundational GenAI concepts and security basics
 - **[LLM Security Notebook](https://github.com/schwartz1375/genai-essentials/blob/main/llm_security.ipynb)** - Essential primer on LLM security concepts (recommended prerequisite)
 - **[Artificial Diaries](https://github.com/schwartz1375/ArtificialDiaries)** - Research publications and case studies
@@ -142,11 +149,13 @@ This course uses industry-standard security testing tools:
 ## ⚠️ Ethical Guidelines
 
 This training is designed for:
+
 - Security research and testing
 - Defensive security improvements
 - Educational purposes
 
 **NOT for:**
+
 - Malicious attacks on production systems
 - Unauthorized testing
 - Illegal activities

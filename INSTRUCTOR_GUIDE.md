@@ -9,6 +9,7 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 **Format**: Each module has runnable Jupyter notebooks (`.ipynb`) with complete solutions.
 
 **Benefits of Notebook Format**:
+
 - Students can run code directly and see outputs
 - Easy to experiment with parameters
 - Better learning experience
@@ -16,9 +17,11 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 - Includes explanations, code, and expected results in one place
 
 ### Module 1: Introduction & Foundations
+
 **File**: `modules/01_introduction/labs/ANSWERS.ipynb`
 
 **Exercises Covered**:
+
 1. **Tokenization Exploration** - Compare 5 different tokenizers
 2. **Temperature Analysis** - Measure output diversity at different temperatures
 3. **Context Overflow** - Demonstrate context window limitations
@@ -29,9 +32,11 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ---
 
 ### Module 2: Prompt Injection & Jailbreaking
+
 **File**: `modules/02_prompt_injection/labs/ANSWERS.ipynb`
 
 **Exercises Covered**:
+
 1. **Create Your Own Jailbreak** (Lab 2) - Design 4 jailbreak techniques
 2. **Design Robust Guardrail** (Lab 3) - Multi-layer defense implementation
 3. **Conversation-Level Defense** (Lab 4) - Detect multi-turn attacks
@@ -41,9 +46,11 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ---
 
 ### Module 3: Model Evasion
+
 **File**: `modules/03_evasion/labs/ANSWERS.ipynb`
 
 **Exercises Covered**:
+
 1. **C&W Attack Implementation** (Lab 1) - Optimization-based evasion
 2. **Targeted SimBA Attack** (Lab 2) - Black-box targeted attack
 3. **Keyboard Typo Attack** (Lab 3) - Realistic text perturbations
@@ -54,9 +61,11 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ---
 
 ### Module 4: Data Extraction & Privacy
+
 **File**: `modules/04_data_extraction/labs/ANSWERS.ipynb`
 
 **Exercises Covered**:
+
 1. **Shadow Model Attack** (Lab 2) - Advanced membership inference
 2. **Regularized Model Inversion** (Lab 3) - Realistic reconstruction
 
@@ -65,9 +74,11 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ---
 
 ### Module 5: Model Poisoning
+
 **File**: `modules/05_poisoning/labs/ANSWERS.ipynb`
 
 **Exercises Covered**:
+
 1. **Clean-Label Poisoning** (Lab 1) - Stealthy data poisoning
 2. **Stealthy Backdoor** (Lab 2) - Hard-to-detect triggers
 3. **Detect Poisoning** (Lab 3) - Detection methods
@@ -78,9 +89,11 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ---
 
 ### Module 7: Assessment & Testing
+
 **File**: `modules/07_assessment/labs/ANSWERS.ipynb`
 
 **Exercises Covered**:
+
 1. **Compare Attack Recipes** (Lab 2) - TextAttack evaluation
 2. **Explanation Robustness** (Lab 3) - Test Alibi on adversarial examples
 3. **Extend Assessment Framework** (Lab 4) - Add privacy and fairness tests
@@ -94,18 +107,21 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ### For Instructors
 
 **Before Class**:
+
 - Review answer guides for the module
 - Identify common pitfalls
 - Prepare additional examples if needed
 - Set up demo environment
 
 **During Class**:
+
 - Let students attempt exercises first
 - Provide hints without giving away solutions
 - Use answer guides for live coding demonstrations
 - Discuss alternative approaches
 
 **After Class**:
+
 - Share answer guides with students
 - Encourage students to compare their solutions
 - Discuss trade-offs and improvements
@@ -114,6 +130,7 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 ### For Students
 
 **Recommended Approach**:
+
 1. Attempt exercise independently first
 2. If stuck, review relevant theory documents
 3. Check answer guide for hints (not full solution)
@@ -122,6 +139,7 @@ This guide provides locations and summaries of all lab exercise answer keys in t
 6. Try to improve or modify the solution
 
 **Learning Tips**:
+
 - Don't just copy the answers
 - Understand each line of code
 - Experiment with parameters
@@ -146,24 +164,28 @@ Each answer includes:
 ## Grading Rubric (Suggested)
 
 ### Code Quality (40%)
+
 - Correctness: Does it work?
 - Completeness: All requirements met?
 - Style: Clean, readable code?
 - Documentation: Comments and explanations?
 
 ### Understanding (30%)
+
 - Can explain how it works
 - Understands trade-offs
 - Identifies limitations
 - Suggests improvements
 
 ### Experimentation (20%)
+
 - Tried different parameters
 - Tested on multiple cases
 - Documented results
 - Drew conclusions
 
 ### Creativity (10%)
+
 - Novel approaches
 - Interesting extensions
 - Thoughtful analysis
@@ -174,15 +196,19 @@ Each answer includes:
 ## Common Student Questions
 
 ### "Can I use a different approach?"
+
 **Answer**: Yes! The answer guides show one solution, but multiple approaches exist. As long as your solution meets the requirements and demonstrates understanding, it's valid.
 
 ### "My results don't match exactly"
+
 **Answer**: That's normal! Random initialization, different hardware, and model versions can cause variations. Focus on whether the general pattern matches.
 
 ### "The attack didn't work"
+
 **Answer**: Attacks don't always succeed. Document why it failed, what you tried, and what you learned. Failure analysis is valuable!
 
 ### "Can I use external libraries?"
+
 **Answer**: Check with your instructor. Generally, using well-known libraries (scikit-learn, numpy) is fine, but the goal is to understand the concepts, not just call APIs.
 
 ---
@@ -190,18 +216,21 @@ Each answer includes:
 ## Additional Resources
 
 ### For Deeper Understanding
+
 - Original research papers (linked in theory documents)
 - OWASP LLM Top 10
 - NIST AI Risk Management Framework
 - Academic conferences (NeurIPS, ICML, ICLR)
 
 ### For Practical Skills
+
 - Kaggle competitions
 - CTF challenges
 - Bug bounty programs
 - Open source contributions
 
 ### For Staying Current
+
 - ArXiv (cs.CR, cs.LG)
 - Security conferences (DEF CON, Black Hat)
 - AI safety forums
@@ -212,6 +241,7 @@ Each answer includes:
 ## Instructor Notes
 
 ### Time Estimates
+
 - Module 1 exercises: 2-3 hours
 - Module 2 exercises: 3-4 hours
 - Module 3 exercises: 4-5 hours
@@ -220,6 +250,7 @@ Each answer includes:
 - Module 7 exercises: 3-4 hours
 
 ### Difficulty Levels
+
 - Module 1: Beginner
 - Module 2: Intermediate
 - Module 3: Intermediate to Advanced
@@ -228,6 +259,7 @@ Each answer includes:
 - Module 7: Advanced
 
 ### Prerequisites
+
 Students should complete modules sequentially. Each module builds on previous concepts.
 
 ---
@@ -235,12 +267,14 @@ Students should complete modules sequentially. Each module builds on previous co
 ## Feedback and Improvements
 
 ### Collecting Feedback
+
 - Student surveys after each module
 - Code review sessions
 - Office hours discussions
 - Anonymous feedback forms
 
 ### Continuous Improvement
+
 - Update answers based on common issues
 - Add clarifications where students struggle
 - Include more examples if needed
@@ -251,6 +285,7 @@ Students should complete modules sequentially. Each module builds on previous co
 ## Contact
 
 For questions about answer guides or teaching materials:
+
 - Review module README files
 - Check theory documents
 - Consult with other instructors
