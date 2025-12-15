@@ -9,21 +9,25 @@ Red teaming AI/ML systems requires a unique mindset that combines technical expe
 ### Core Principles
 
 **1. Question Everything**
+
 - Assume nothing is secure by default
 - Challenge stated capabilities and limitations
 - Look for gaps between intended and actual behavior
 
 **2. Think in Attack Chains**
+
 - Individual vulnerabilities may seem minor
 - Combined exploits can be devastating
 - Map attack paths from initial access to impact
 
 **3. Embrace Creativity**
+
 - Attacks often succeed through unexpected approaches
 - Combine techniques in novel ways
 - Think beyond documented vulnerabilities
 
 **4. Understand Incentives**
+
 - Why would someone attack this system?
 - What's valuable to protect?
 - What are the consequences of failure?
@@ -31,18 +35,21 @@ Red teaming AI/ML systems requires a unique mindset that combines technical expe
 ## The Red Team vs Blue Team Perspective
 
 ### Red Team (Offensive)
+
 - **Goal**: Find vulnerabilities before attackers do
 - **Approach**: Creative, unrestricted thinking
 - **Success**: Discovering new attack vectors
 - **Mindset**: "How can I break this?"
 
 ### Blue Team (Defensive)
+
 - **Goal**: Protect systems from attacks
 - **Approach**: Systematic, comprehensive defense
 - **Success**: Preventing successful attacks
 - **Mindset**: "How can I secure this?"
 
 ### Purple Team (Collaborative)
+
 - **Goal**: Improve overall security posture
 - **Approach**: Combine offensive and defensive insights
 - **Success**: Measurable security improvements
@@ -51,7 +58,9 @@ Red teaming AI/ML systems requires a unique mindset that combines technical expe
 ## Threat Modeling for AI/ML Systems
 
 ### Step 1: Identify Assets
+
 What needs protection?
+
 - **Model weights**: Proprietary algorithms
 - **Training data**: Sensitive or private information
 - **Inference outputs**: Business-critical decisions
@@ -59,14 +68,18 @@ What needs protection?
 - **Reputation**: Trust and brand value
 
 ### Step 2: Identify Threat Actors
+
 Who might attack?
+
 - **External attackers**: Competitors, criminals, nation-states
 - **Malicious insiders**: Disgruntled employees
 - **Curious researchers**: Well-intentioned but risky
 - **Automated systems**: Bots, scrapers, adversarial agents
 
 ### Step 3: Identify Attack Vectors
+
 How might they attack?
+
 - **Input manipulation**: Adversarial examples, prompt injection
 - **Training interference**: Data poisoning, backdoors
 - **Model extraction**: Query-based stealing
@@ -74,7 +87,9 @@ How might they attack?
 - **Infrastructure**: Traditional IT vulnerabilities
 
 ### Step 4: Assess Impact
+
 What happens if they succeed?
+
 - **Confidentiality**: Data leakage, model theft
 - **Integrity**: Incorrect outputs, biased decisions
 - **Availability**: Service disruption, resource exhaustion
@@ -82,7 +97,9 @@ What happens if they succeed?
 - **Compliance**: Regulatory violations
 
 ### Step 5: Prioritize Risks
+
 Focus on:
+
 - High impact + high likelihood = Critical
 - High impact + low likelihood = Important
 - Low impact + high likelihood = Monitor
@@ -91,20 +108,25 @@ Focus on:
 ## Attack Surface Analysis
 
 ### Input Attack Surface
+
 **Natural Language Inputs**
+
 - Prompts and instructions
 - User queries and conversations
 - System messages and context
 - Few-shot examples
 
 **Structured Inputs**
+
 - API parameters
 - Configuration files
 - Uploaded documents
 - Multimodal inputs (images, audio)
 
 ### Model Attack Surface
+
 **Training Phase**
+
 - Training data sources
 - Data preprocessing pipelines
 - Model architecture choices
@@ -112,6 +134,7 @@ Focus on:
 - Training infrastructure
 
 **Inference Phase**
+
 - Model serving infrastructure
 - API endpoints
 - Rate limiting and quotas
@@ -119,7 +142,9 @@ Focus on:
 - Output filtering
 
 ### Integration Attack Surface
+
 **External Systems**
+
 - Databases and data stores
 - Third-party APIs
 - Plugin ecosystems
@@ -129,21 +154,25 @@ Focus on:
 ## Common Cognitive Biases to Exploit
 
 ### 1. Anthropomorphization
+
 **Bias**: Treating AI as human-like
 **Exploit**: Users trust AI outputs like human advice
 **Example**: "The AI said it's safe" without verification
 
 ### 2. Automation Bias
+
 **Bias**: Over-relying on automated systems
 **Exploit**: Reduced human oversight
 **Example**: Accepting AI decisions without review
 
 ### 3. Availability Heuristic
+
 **Bias**: Focusing on recent/memorable events
 **Exploit**: Defenders focus on known attacks
 **Example**: Novel attack vectors go undetected
 
 ### 4. Confirmation Bias
+
 **Bias**: Seeking information that confirms beliefs
 **Exploit**: Defenders miss contradictory evidence
 **Example**: "Our guardrails work" despite bypass attempts
@@ -151,18 +180,21 @@ Focus on:
 ## Red Team Methodologies
 
 ### 1. Black Box Testing
+
 **Approach**: No internal knowledge
 **Advantages**: Realistic attacker perspective
 **Disadvantages**: May miss internal vulnerabilities
 **Use Case**: External penetration testing
 
 ### 2. White Box Testing
+
 **Approach**: Full system knowledge
 **Advantages**: Comprehensive coverage
 **Disadvantages**: Unrealistic attacker knowledge
 **Use Case**: Security audits, code review
 
 ### 3. Gray Box Testing
+
 **Approach**: Partial system knowledge
 **Advantages**: Balanced realism and coverage
 **Disadvantages**: Requires careful scoping
@@ -171,30 +203,35 @@ Focus on:
 ## Attack Development Process
 
 ### Phase 1: Reconnaissance
+
 - Understand the target system
 - Identify technologies and frameworks
 - Map the attack surface
 - Gather publicly available information
 
 ### Phase 2: Vulnerability Discovery
+
 - Test input validation
 - Probe for edge cases
 - Analyze error messages
 - Experiment with unusual inputs
 
 ### Phase 3: Exploit Development
+
 - Craft proof-of-concept attacks
 - Refine for reliability
 - Minimize detectability
 - Document reproduction steps
 
 ### Phase 4: Impact Assessment
+
 - Demonstrate real-world consequences
 - Quantify potential damage
 - Identify affected systems
 - Propose remediation
 
 ### Phase 5: Reporting
+
 - Clear vulnerability descriptions
 - Reproduction steps
 - Impact analysis
@@ -203,32 +240,39 @@ Focus on:
 ## Ethical Considerations
 
 ### Responsible Disclosure
+
 **Do**:
+
 - Report vulnerabilities to the organization
 - Allow reasonable time for fixes
 - Coordinate public disclosure
 - Protect user data
 
 **Don't**:
+
 - Exploit vulnerabilities for personal gain
 - Cause unnecessary harm
 - Disclose before fixes are available
 - Exfiltrate sensitive data
 
 ### Scope and Authorization
+
 **Always**:
+
 - Get written authorization
 - Define clear scope boundaries
 - Respect data privacy
 - Follow legal requirements
 
 **Never**:
+
 - Test systems without permission
 - Exceed authorized scope
 - Access user data unnecessarily
 - Cause service disruptions
 
 ### Professional Standards
+
 - Maintain confidentiality
 - Act in good faith
 - Prioritize safety
@@ -238,7 +282,9 @@ Focus on:
 ## Practical Exercises
 
 ### Exercise 1: Threat Modeling
+
 Pick an AI/ML system you use regularly:
+
 1. Identify what assets need protection
 2. List potential threat actors
 3. Map possible attack vectors
@@ -246,7 +292,9 @@ Pick an AI/ML system you use regularly:
 5. Prioritize top 3 risks
 
 ### Exercise 2: Attack Surface Mapping
+
 For a hypothetical LLM chatbot:
+
 1. List all input points
 2. Identify integration points
 3. Map data flows
@@ -254,7 +302,9 @@ For a hypothetical LLM chatbot:
 5. Highlight high-risk areas
 
 ### Exercise 3: Adversarial Thinking
+
 Given a content moderation system:
+
 1. How would you bypass it?
 2. What assumptions does it make?
 3. What edge cases exist?
@@ -264,17 +314,20 @@ Given a content moderation system:
 ## Red Team Tools and Techniques
 
 ### Reconnaissance Tools
+
 - **API exploration**: Postman, Burp Suite
 - **Model probing**: Custom scripts, automated testing
 - **Information gathering**: OSINT, documentation review
 
 ### Attack Tools
+
 - **Adversarial examples**: ART, Foolbox, CleverHans
 - **Text attacks**: TextAttack, OpenAttack
 - **Prompt injection**: Custom payloads, encoding tricks
 - **Model extraction**: Query-based stealing scripts
 
 ### Analysis Tools
+
 - **Monitoring**: Logging, metrics, alerts
 - **Visualization**: Attack success rates, perturbation analysis
 - **Documentation**: Markdown, Jupyter notebooks, reports
@@ -282,6 +335,7 @@ Given a content moderation system:
 ## Case Studies: Adversarial Thinking in Action
 
 ### Case Study 1: Indirect Prompt Injection
+
 **Scenario**: LLM-powered email assistant
 **Adversarial Question**: "What if malicious instructions are in the email content?"
 **Discovery**: Hidden instructions in email signatures
@@ -289,6 +343,7 @@ Given a content moderation system:
 **Lesson**: Trust boundaries matter
 
 ### Case Study 2: Training Data Extraction
+
 **Scenario**: Public LLM API
 **Adversarial Question**: "Can we recover training data through queries?"
 **Discovery**: Repeated sampling extracts memorized content
@@ -296,6 +351,7 @@ Given a content moderation system:
 **Lesson**: Memorization is a vulnerability
 
 ### Case Study 3: Guardrail Bypass
+
 **Scenario**: Content filter on LLM
 **Adversarial Question**: "What if we encode the harmful request?"
 **Discovery**: Base64, ROT13, and other encodings bypass filters
@@ -303,6 +359,7 @@ Given a content moderation system:
 **Lesson**: Filters need semantic understanding
 
 ### Case Study 4: Model Extraction
+
 **Scenario**: Proprietary sentiment analysis API
 **Adversarial Question**: "Can we steal the model through queries?"
 **Discovery**: Systematic querying builds equivalent model
@@ -314,24 +371,28 @@ Given a content moderation system:
 ### Practice Techniques
 
 **1. Reverse Engineering**
+
 - Study existing attacks
 - Understand why they work
 - Identify underlying principles
 - Apply to new contexts
 
 **2. Constraint Removal**
+
 - Ask "What if this assumption is wrong?"
 - Remove one constraint at a time
 - Explore impossible scenarios
 - Find creative workarounds
 
 **3. Failure Analysis**
+
 - Study why defenses fail
 - Identify common patterns
 - Learn from past incidents
 - Anticipate future failures
 
 **4. Cross-Domain Learning**
+
 - Apply web security techniques to AI
 - Use social engineering insights
 - Borrow from physical security
@@ -340,18 +401,21 @@ Given a content moderation system:
 ### Building Attack Intuition
 
 **Pattern Recognition**
+
 - Similar vulnerabilities across systems
 - Common implementation mistakes
 - Recurring defense weaknesses
 - Predictable failure modes
 
 **Mental Models**
+
 - How do LLMs process inputs?
 - Where are trust boundaries?
 - What can go wrong?
 - How would I defend this?
 
 **Continuous Learning**
+
 - Read security research papers
 - Follow vulnerability disclosures
 - Participate in CTFs
@@ -360,6 +424,7 @@ Given a content moderation system:
 ## Red Team Mindset Checklist
 
 Before starting any engagement:
+
 - [ ] Do I have proper authorization?
 - [ ] Is the scope clearly defined?
 - [ ] Do I understand the system architecture?
